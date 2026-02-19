@@ -7,7 +7,7 @@ private let logger = Logger(subsystem: "com.northwoods.VocalistPositions", categ
 @Observable
 final class DisplayServer {
     private(set) var isRunning = false
-    private(set) var port: UInt16 = 8080
+    private(set) var port: UInt16 = 8081
     private(set) var connectionCount = 0
 
     private var listener: NWListener?
@@ -23,7 +23,7 @@ final class DisplayServer {
         self.imageStorage = imageStorage
     }
 
-    func start(port: UInt16 = 8080) {
+    func start(port: UInt16 = 8081) {
         guard !isRunning else { return }
         self.port = port
 

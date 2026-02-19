@@ -2,16 +2,14 @@
 
 ## Network Server
 
-Both Camera Positions and Vocalist Positions run an HTTP server on **port 8080** to serve the web display.
+Camera Positions runs an HTTP server on **port 8080** and Vocalist Positions on **port 8081** to serve the web display. Both apps can run simultaneously.
 
 - The server binds to your Mac's local network interface only
 - It serves read-only data: position assignments, names, and photos
 - There are no admin endpoints — the web display cannot modify assignments
 - No authentication is required (the display is intended to be openly viewable on your local network)
 
-**If you do not want the web display accessible to other devices on your network**, you can access it at `http://localhost:8080` from the same machine only.
-
-**Note:** Both apps use the same port (8080), so only one can run at a time.
+**If you do not want the web display accessible to other devices on your network**, you can access it at `http://localhost:8080` (Camera) or `http://localhost:8081` (Vocalist) from the same machine only.
 
 ## Credential Storage
 
