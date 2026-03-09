@@ -1,5 +1,9 @@
 # Production Positions
 
+## Security
+
+See [SECURITY.md](SECURITY.md) for security findings from the 2026-03-01 review.
+
 ## Purpose
 Two macOS apps for assigning production team members to numbered positions. Admin configures via SwiftUI app; team views assignments on a shared monitor via web browser.
 
@@ -39,6 +43,10 @@ cd vocalist-positions && ./build.sh
 - OneDrive xattrs break code signing — `xattr -cr` in build.sh before signing
 - Web resources embedded in app bundle via `path: Resources/Web, type: folder` in project.yml
 - Camera Positions uses port 8080, Vocalist Positions uses port 8081 — both can run simultaneously
+
+## TODO
+
+- [x] Update app icon and push to git (new icon generated 2026-03-08 via ChatGPT DALL-E — isometric stage floor with cameras and footprint markers, dark navy squircle)
 
 # currentDate
 Today's date is 2026-02-19.
