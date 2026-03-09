@@ -23,7 +23,7 @@ targets:
         type: folder
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.northwoods.CameraPositions
+        PRODUCT_BUNDLE_IDENTIFIER: com.northwoods.ProductionCameraPositions
         MARKETING_VERSION: "1.0.4"
         CURRENT_PROJECT_VERSION: 5
         INFOPLIST_FILE: CameraPositions/Info.plist
